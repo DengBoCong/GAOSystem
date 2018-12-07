@@ -1,0 +1,23 @@
+.container  {
+    width: 2700px;
+    float: left;
+    margin-top: 110px;
+}
+
+.content{overflow: hidden;
+    overflow-x: scroll;
+}
+.pd{
+    width: 180px;
+    height: 1px;
+    float: left;
+}
+.content h2 {
+    position: fixed;
+    top: 100px;
+    left: 56%;
+}
+.img{
+    width: 500px;float: left;
+    margin-left: 380px;
+}

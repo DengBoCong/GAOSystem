@@ -1,0 +1,127 @@
+.content {
+    position: relative;
+}
+.content a{
+    display: block;
+    position: absolute;
+}
+.fuwuxietiao {
+    width: 152px;
+    height: 106px;
+    left: 44px;
+    top: 117px;
+}
+.laifang {
+    width: 113px;
+    height: 106px;
+    left: 192px;
+    top: 118px;
+}
+.yuanzhang {
+    width: 132px;
+    height: 106px;
+    left: 309px;
+    top: 118px;
+}
+.sanjizhong {
+    width: 214px;
+    height: 105px;
+    left: 441px;
+    top: 118px;
+}
+.ezhongxin {
+    width: 130px;
+    height: 105px;
+    left: 655px;
+    top: 118px;
+}
+.fuwuchuangkou {
+    width: 274px;
+    height: 106px;
+    left: 785px;
+    top: 117px;
+}
+.zhixingchuangkou {
+    width: 79px;
+    height: 234px;
+    left: 980px;
+    top: 223px;
+}
+.zizhulian {
+    width: 110px;
+    height: 104px;
+    left: 655px;
+    top: 266px;
+}
+.maodun {
+    width: 198px;
+    height: 104px;
+    left: 457px;
+    top: 266px;
+}
+.sucaiwufu {
+    width: 112px;
+    height: 108px;
+    left: 345px;
+    top: 266px;
+}
+.sucaishenpan {
+    width: 93px;
+    height: 108px;
+    left: 252px;
+    top: 266px;
+}
+.faguanyuetan {
+    width: 133px;
+    height: 108px;
+    left: 119px;
+    top: 266px;
+}
+.laifang2 {
+    width: 75px;
+    height: 108px;
+    left: 44px;
+    top: 266px;
+}
+.denghou {
+    width: 206px;
+    height: 173px;
+    left: 715px;
+    top: 457px;
+}
+.jingwu {
+    width: 94px;
+    height: 90px;
+    left: 965px;
+    top: 537px;
+}
+.jianan {
+    width: 94px;
+    height: 90px;
+    left: 962px;
+    top: 447px;
+}
+.zizhuchaxun {
+    width: 143px;
+    height: 90px;
+    left: 965px;
+    top: 630px;
+}
+.susongzhidao {
+    width: 82px;
+    height: 63px;
+    left: 1026px;
+    top: 800px;
+}
+.daosu {
+    width: 65px;
+    height: 160px;
+    left: 856px;
+    top: 675px;
+}
+.xinli{
+    width: 132px;
+    height: 188px;
+    left: 649px;
+    top: 675px;
+}

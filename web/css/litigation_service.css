@@ -1,0 +1,34 @@
+.content_b{
+    width: 1110px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.teshu{
+    width: 740px;
+}
+.member{
+    float: left;
+    width: 250px;
+    height: 426px;
+    margin: 30px 60px;
+}
+.spc{
+    height: 445px;
+}
+.court_photo{
+    width: 250px;
+    height: 350px;
+}
+.court_photo img{
+    width: 100%;
+}
+.info span{
+    text-align: center;
+    display: block;
+    margin: 0px auto;
+}
+.subtitle{
+    width: 992px;
+    margin: 0 auto;
+    margin-top: 30px;
+}

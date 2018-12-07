@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.cl {
+    clear: both;
+}
+::-webkit-scrollbar {width: 6px;height:6px;}
+::-webkit-scrollbar-track-piece{background-color: rgba(255,255,255,.2);margin: -2px;}
+::-webkit-scrollbar-thumb{background: rgba(255,255,255,.5);min-height: 150px;min-width: 150px;border-radius: 10px;}
+/*::-webkit-scrollbar-thumb:vertical:hover{background: #555555}*/
+/*::-webkit-scrollbar-thumb:horizontal:hover{background: #555555}*/
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    background: url("../img/bg_page1_4000_2250.jpg") no-repeat;
+    background-size: 100%;
+}
+
+.active {
+    background-color: #e0735e !important;
+}
+
+.menu {
+    float: left;
+    display: none;
+    /*background: #1b1e21;*/
+    height: 750px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.content {
+    float: left;
+    display: none;
+    background: rgba(245, 145, 153, .45);
+    /*box-shadow:5px 5px 10px gray;*/
+}
+
+.menu-button {
+    float: left;
+    background-color: #009fd5;
+    text-align: center;
+    color: #ffffff;
+    display: none;
+}
+
+
+@media screen and (width: 1920px) {
+    .menu {
+        display: block;
+        margin-top: 200px;
+        margin-left: 100px;
+        width: 270px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .font-small {
+        font-size: 42px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        height: 120px !important;
+    }
+
+    .menu-button {
+        cursor: pointer;
+        display: block;
+        padding-top: 20px;
+        margin-bottom: 40px;
+        font-size: 52px;
+        width: 100%;
+        height: 92px;
+        border-radius: 4px;
+    }
+
+    .content {
+        border-radius: 10px;
+        padding: 20px;
+        display: block;
+        margin-top: 100px;
+        margin-left: 120px;
+        width: 1240px;
+        height: 900px;
+        overflow-y: scroll;
+        -ms-overflow-y: scroll;
+        font-size: 34px;
+        color: #ffffff;
+    }
+
+    .content .content-button:nth-child(1),
+    .content .content-button:nth-child(2),
+    .content .content-button:nth-child(3),
+    .content .content-button:nth-child(4) {
+        margin-top: 40px;
+    }
+
+    .content .content-button:nth-child(1),
+    .content .content-button:nth-child(5),
+    .content .content-button:nth-child(9),
+    .content .content-button:nth-child(13) {
+        margin-left: 40px;
+    }
+
+    .content .content-button {
+        width: 250px;
+        float: left;
+        cursor: pointer;
+        margin-right: 15px;
+        margin-bottom: -40px;
+        font-size: 40px;
+        padding-top: 10px;
+        height: 115px;
+        border-radius: 4px;
+        background-color: #009fd5;
+        text-align: center;
+        color: #ffffff;
+    }
+    .content .spec{
+
+    }
+    .back{
+        position: absolute;
+        bottom: 10px;
+        left: 180px;
+    }
+    .back_btn{
+        width: 110px;
+    }
+    .content .title{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 48px;
+    }
+    .content .content_c{
+        margin: 80px auto;
+        width: 80%;
+        text-indent: 2em;
+    }
+    .content .content_a{
+        margin: 80px auto;
+        width: 80%;
+        text-indent: 2em;
+    }
+}
+
+.content .cbtn1{
+    background: rgba(255, 255, 255, .2) !important;
+    border-radius: 10px;
+    float: left;
+    width: 230px;
+    height: 70px;
+    padding: 50px;
+    margin: 40px;
+    text-align: center;
+}
+.cbtn2{
+    background: rgba(255, 255, 255, .2) !important;
+    border-radius: 10px;
+    float: left;
+    width: 450px;
+    height: 120px;
+    padding: 35px 40px 25px 40px;
+    margin: 40px;
+    text-align: center;
+}
+.cbtn_dan{
+    background: rgba(255, 255, 255, .2) !important;
+    border-radius: 10px;
+    float: left;
+    width: 530px;
+    height: 180px;
+    line-height: 180px;
+    margin: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+.content div.lianghang  {
+    float: left;
+    width: 340px;
+    height: 105px;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 25px;
+    line-height: 40px;
+}
+.content .cbtn {
+    background: rgba(255, 255, 255, .2) !important;
+    border-radius: 10px;
+    float: left;
+    width: 340px;
+    height: 130px;
+    margin: 30px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 130px;
+}
+.home {
+    position: absolute;
+    bottom: 50px;
+    right: 110px;
+    font-size: 40px;
+}
+.content h2{
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: center;
+}
+.zhidu {
+    position: absolute;
+    width: 700px;
+    height: 940px; ;
+    z-index: 10;
+    left: 850px;
+    top: 100px;
+    overflow: hidden;
+    display: none;
+    overflow-x: scroll;
+
+}
+.zhidu img{
+    width: 700px;
+    float: left;
+    /*position: absolute;*/
+    z-index: 10;
+    /*display: none;*/
+}
+
+.zhidu .close {
+    width: 50px;
+    height: 50px;
+    background: url(../html/litigation_service_centre/gongnengquyu/img/close1.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    z-index: 11;
+    opacity: 0.3;
+}
+.zhidu .close:hover {
+    opacity: 1;
+}
+.rules {
+    display: block;
+    text-indent: 3em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.zhidu .tebie {
+    width: 50px;
+    height: 50px;
+    background: url(../html/litigation_service_centre/gongnengquyu/img/close1.png) no-repeat;
+    background-size: 100%;
+    position: fixed;
+    right: 380px;
+    top: 110px;
+    z-index: 11;
+    opacity: 0.3;
+}.zhidu .cont {
+     width: 1400px;
+ }
+.content .oh {
+     overflow: hidden;
+     overflow-x: scroll;
+ }
+.gangwei {
+     margin: 0 auto;
+}
+.people {
+    width: 200px;
+    float: left;
+}
+.p2 {
+    width: 200px;
+}
+.p3 {
+    width: 900px;
+}
+.p3 .people {
+    margin: 0 50px;
+}
+.gangwei .name ,.gangwei .job{
+    width: 200px;
+    text-align: center;
+    text-indent: 0;
+    margin: 0;
+
+}
+.gangwei img {
+    width: 200px;
+    height: 266px;
+
+}
+.zhidu.tebiebie{
+    position: absolute;
+    width: 700px;
+    z-index: 10;
+    left: 850px;
+    top: 100px;
+    overflow: hidden;
+    display: none;
+    overflow-x: scroll;
+}

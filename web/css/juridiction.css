@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    background: url("../img/sifa_bg.jpg") no-repeat;
+    background-size: 100%;
+}
+
+.active {
+    background-color: #e0735e !important;
+}
+
+.menu {
+    float: left;
+    display: none;
+    /*background: #1b1e21;*/
+}
+
+.content {
+    float: left;
+    display: none;
+    background: rgba(245, 145, 153, .45);
+}
+
+.menu-button {
+    float: left;
+    background-color: #009fd5;
+    text-align: center;
+    color: #ffffff;
+    display: none;
+}
+
+
+@media screen and (width: 1920px) {
+    .menu {
+        display: block;
+        margin-top: 200px;
+        margin-left: 100px;
+        width: 270px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .font-small {
+        font-size: 42px !important;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+        height: 120px !important;
+    }
+
+    .menu-button {
+        cursor: pointer;
+        display: block;
+        padding-top: 25px;
+        margin-bottom: 40px;
+        font-size: 52px;
+        width: 100%;
+        height: 105px;
+        border-radius: 4px;
+    }
+
+    .content {
+        border-radius: 10px;
+        padding: 20px;
+        display: block;
+        margin-top: 100px;
+        margin-left: 120px;
+        width: 1240px;
+        height: 900px;
+        overflow-y: scroll;
+        -ms-overflow-y: scroll;
+        font-size: 34px;
+        color: #ffffff;
+    }
+
+    .content .content-button:nth-child(1),
+    .content .content-button:nth-child(2),
+    .content .content-button:nth-child(3),
+    .content .content-button:nth-child(4) {
+        margin-top: 150px;
+    }
+
+    .content .content-button:nth-child(1),
+    .content .content-button:nth-child(5),
+    .content .content-button:nth-child(9),
+    .content .content-button:nth-child(13) {
+        margin-left: 40px;
+    }
+
+    .content .content-button {
+        width: 250px;
+        float: left;
+        cursor: pointer;
+        margin-right: 15px;
+        margin-bottom: -40px;
+        font-size: 30px;
+        padding-top: 15px;
+        height: 115px;
+        border-radius: 4px;
+        background-color: #009fd5;
+        text-align: center;
+        color: #ffffff;
+    }
+    .back{
+        position: absolute;
+        bottom: 100px;
+        left: 180px;
+    }
+    .back_btn{
+        width: 110px;
+    }
+    .content .title{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 48px;
+    }
+    .content .content_c{
+        margin: 80px auto;
+        width: 80%;
+        text-indent: 2em;
+    }
+    .content .content_a{
+        margin: 80px auto;
+        width: 80%;
+        text-indent: 2em;
+    }
+}

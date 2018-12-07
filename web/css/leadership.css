@@ -1,0 +1,17 @@
+.leader{
+    float: left;
+    width: 900px;
+}
+.leadership{
+    width: 9999px;
+    margin-left: 160px;
+}
+.content{
+    overflow: hidden;
+    overflow-x: scroll;
+}
+.pd{
+    width: 180px;
+    height: 1px;
+    float: left;
+}

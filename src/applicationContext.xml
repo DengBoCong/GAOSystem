@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- data connection -->
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+        <property name="url" value="jdbc:mysql://localhost:3306/gaosystem?userSSL=false"></property>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
+    </bean>
+
+    <!-- session factory -->
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.connection.url">jdbc:mysql://localhost:3306/gaosystem</prop>
+                <prop key="hibernate.connection.driver_class">com.mysql.jdbc.Driver</prop>
+                <prop key="hibernate.c3p0.minPoolSize">5</prop>
+                <prop key="hibernate.c3p0.maxPoolSize">5000</prop>
+                <prop key="hibernate.c3p0.max_size">500</prop>
+                <prop key="hibernate.c3p0.timeout">30</prop>
+                <prop key="hibernate.c3p0.idle_test_period">30</prop>
+                <prop key="hibernate.c3p0.acquire_increment">2</prop>
+                <prop key="hibernate.c3p0.max_statements">10</prop>
+                <prop key="current_session_context_class">thread</prop>
+            </props>
+        </property>
+        <property name="mappingLocations">
+            <list>
+                <value>classpath:com/GAOSystem/Entity/UserEntity.hbm.xml</value>
+                <value>classpath:com/GAOSystem/Entity/ContentEntity.hbm.xml</value>
+                <value>classpath:com/GAOSystem/Entity/ContentEntity.hbm.xml</value>
+            </list>
+        </property>
+        <property name="annotatedClasses">
+            <list>
+                <value>com.GAOSystem.Entity.UserEntity</value>
+                <value>com.GAOSystem.Entity.ContentEntity</value>
+            </list>
+        </property>
+    </bean>
+
+
+    <bean class="com.GAOSystem.Test.TestService" id="testService">
+        <property name="name" value="spring"></property>
+    </bean>
+
+    <bean class="com.GAOSystem.Impl.UserImpl" id="user">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+    <bean class="com.GAOSystem.Impl.ContentImpl" id="content">
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+</beans>
